@@ -1,0 +1,67 @@
+<html>
+
+<head>
+  <title>Login :</title>
+</head>
+
+<body>
+  <div class="container" id="container">
+    <div class="form-container log-in-container">
+      <form action="#" method="" class="">
+        <h1>Login</h1>
+        <div class="social-container row">
+
+          <a href="#" class="social soc-main col-md-6"><label class="label-soc" for="me"><i
+                class="fas fa-unlock-alt"></i> sign
+              up</label></a>
+
+          <a href="#" class="social soc-main col-md-6"><label class="label-soc" for="me"><i class="fas fa-home"></i>
+              Home</label></a>
+
+          <hr>
+          <!--
+      -----IF ERROR OCCURE HERE PRINT IT-----
+     <?php if (isset($_GET['error'])) { ?>
+     		<span class="err" ><?php echo $_GET['error']; ?></span>
+     	<?php } ?> -->
+
+        </div>
+        <span>or use your account</span>
+        <input class="input" type="email" id="mailid" name="uname" placeholder="example@gmail.com"
+          onkeyup="return ValidateEmail();" />
+
+        <input class="input" type="password" name="password" id="myInput" placeholder="Password" />
+        <div class="show"><input type="checkbox" class="check" onclick="myFunction()" title="show password"><span>show
+            password</span></div>
+
+
+        <!-- <?php if (isset($_GET['error'])) {
+					if($_GET['error']==="Incorect Email or password"){?> -->
+        <a class="btn-msg" href="#">Forgot your password? click me</a>
+        <!-- <?php }} ?> -->
+        <div class="color" style="font-size: 11px;">
+          <i style="color:cyan" class="fa fa-square" aria-hidden="true"></i>Blank
+          <i style="color:red" class="fa fa-square" aria-hidden="true"></i>Wrong
+          <i style="color:lightgreen" class="fa fa-square" aria-hidden="true"></i>True
+
+
+
+
+        </div><br>
+        <button name="submit">Log In</button>
+      </form>
+    </div>
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-right">
+          <!-- <a href="https://imgbb.com/"><img src="" alt="tree1" border="0" /></a> -->
+          <img width="150" src="../../assets/img/logo/logo-bg-.png" alt="Green Leaf">
+          <h1>Green Leaf Nursery</h1>
+          <p>Green leaf nursery that provide plants, seeds, fertilizers and gardning related services. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

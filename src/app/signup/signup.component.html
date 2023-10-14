@@ -1,0 +1,63 @@
+<html>
+
+<head>
+  <title>Login :</title>
+</head>
+
+<body>
+  <div class="container" id="container">
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-right">
+          <img width="150" src="https://i.ibb.co/pKjy1s3/tree1.png" alt="Green Leaf">
+          <h1>WELCOME to Winner machinery</h1>
+          <p>Machining Manufacturer in Odhav. </p>
+        </div>
+      </div>
+    </div>
+    <div class="form-container log-in-container">
+      <form action="#" method="post" class="signup">
+        <h1>Create Account</h1>
+        <div class="social-container row">
+          <a href="#login.php" class="social soc-main col-md-6"><label class="label-soc" for="me"><i
+                class="fas fa-unlock-alt"></i> Login</label></a>
+          <a href="#index.php" class="social soc-main col-md-6"><label class="label-soc" for="me"><i
+                class="fas fa-home"></i> Home</label></a>
+          <hr>
+          <!--php if (isset($_GET['error'])) { ?>
+     		    <span class="err" ><?php echo $_GET['error']; ?></span>
+     	        <?php } ?-->
+
+        </div>
+
+        <span>or create your new account</span>
+        <input type="text" class="input" name="name" placeholder="Your Name" />
+        <input type="email" class="input" id="mailid" name="uname" placeholder="example@gmail.com"
+          onkeyup="return ValidateEmail();" />
+        <input type="password" class="input" id="myInput" name="password" placeholder="Password"
+          onkeyup="return passwordChanged();" />
+        <input type="password" class="input" id="myInput1" name="re_password" placeholder="Confirm-Password"
+          onkeyup="return passwordChanged1();" />
+        <div class="show"><input type="checkbox" class="check" onclick="myFunction()" title="show password"><span>show
+            password</span></div><br>
+
+        <script>
+
+        </script>
+        <div class="color" style="font-size: 11px;">
+          <i style="color:cyan" class="fa fa-square" aria-hidden="true"></i>Blank
+          <i style="color:red" class="fa fa-square" aria-hidden="true"></i>Low
+          <i style="color:orange" class="fa fa-square" aria-hidden="true"></i>Medium
+          <i style="color:purple" class="fa fa-square" aria-hidden="true"></i>NumAlph + < 8 <i style="color:lightgreen"
+            class="fa fa-square" aria-hidden="true"></i>Strong
+
+        </div><br>
+        <!-- <a href="Forgotpass/forgot.php">Forgot your password?</a> -->
+        <button name="submit">Sign up</button>
+      </form>
+    </div>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!-- header section -->
+<div class="top-img">
+  <img src="assets/img/home-filler.jpeg" width="100%" style="height: 100vh;" loading="lazy"
+    alt="plant inside the bulb" />
+  <a href="#featured">
+    <h2>Our Site Most</h2>
+  </a>
+  <p>Best product for you..</p>
+</div>
+<header id="header" class="header">
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a routerLink="/" class="navbar-brand">
+      <img src="../../assets/img/logo/logo-bg.png" alt="company logo" width="100" />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item mx-2" routerLinkActive="nav-active" [routerLinkActiveOptions]="{ exact: true }">
+          <a routerLink="/" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item mx-2" routerLinkActive="nav-active">
+          <a routerLink="/products" class="nav-link">Products</a>
+        </li>
+        <li class="nav-item mx-2" routerLinkActive="nav-active">
+          <a routerLink="/singleproduct" class="nav-link">Single Product</a>
+        </li>
+        <li class="nav-item mx-2" routerLinkActive="nav-active">
+          <a routerLink="/store" class="nav-link">Store</a>
+        </li>
+        <li class="nav-item mx-2" routerLinkActive="nav-active">
+          <a routerLink="/aboutus" class="nav-link">About-Us</a>
+        </li>
+        <li class="nav-item mx-2 	d-block d-lg-none" routerLinkActive="nav-active">
+          <a routerLink="/aboutus" class="nav-link">Abo-Us</a>
+        </li>
+      </ul>
+    </div>
+    <div class="navbar-icons d-none d-lg-flex">
+      <!-- single icon -->
+      <div class="navbar-icon mx-2"><i class="fas fa-search"></i></div>
+      <!-- end of single icon -->
+      <!-- single icon -->
+      <a routerLink="/store" class="navbar-icon mx-2 navbar-cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+        <div class="cart-items">2</div>
+      </a>
+      <!-- end of  single icon -->
+    </div>
+  </nav>
+  <!-- end of navbar -->
+</header>
+<!-- end of header section -->
